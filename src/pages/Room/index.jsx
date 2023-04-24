@@ -6,8 +6,8 @@ const RoomPage= () => {
     const {roomId} = useParams();
 
     const myMeeting=async (element) => {
-        const appID= 472478217;
-        const serverSecret="061cc6fb9da4bf2f6aa7493f1ad5e1d6";
+        const appID= 2055839774;
+        const serverSecret="4699247e83ac1ba5f1784f30692c85e6";
         const kitToken=ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomId, Date.now().toString(), "Enter Your Name Here");
 
         const zc=ZegoUIKitPrebuilt.create(kitToken);
@@ -16,7 +16,7 @@ const RoomPage= () => {
             sharedLinks: [
                 {
                     name: 'Copy Link',
-                    url: `https://khanakhazana-meeting.vercel.app/room/${roomId}`
+                    url: `https://talkingminds-meeting.vercel.app/room/${roomId}`
                 }
             ],
             scenario: {
